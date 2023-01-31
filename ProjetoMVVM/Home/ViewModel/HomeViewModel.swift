@@ -13,7 +13,7 @@ class HomeViewModel {
         Stories(image: "img1", userName: "Add Story"),
         Stories(image: "img2", userName: "Otavio"),
         Stories(image: "img3", userName: "Luisa"),
-        Stories(image: "img4", userName: "Luciana"),
+        Stories(image: "img4", userName: "Samuel"),
         Stories(image: "img5", userName: "Pedro"),
         Stories(image: "img6", userName: "Isabelly"),
         Stories(image: "img7", userName: "Bino")
@@ -24,10 +24,10 @@ class HomeViewModel {
     }
     
     private var posts = [
-        Posts(profileImage: "img2", userName: "Jack", postImage: "post1"),
-        Posts(profileImage: "img4", userName: "Samuel", postImage: "pos2"),
-        Posts(profileImage: "img3", userName: "Carolina", postImage: "post3"),
-        Posts(profileImage: "img6", userName: "Bino", postImage: "post4"),
+        Posts(profileImage: "img2", userName: "Otavio", postImage: "post1"),
+        Posts(profileImage: "img4", userName: "Samuel", postImage: "post2"),
+        Posts(profileImage: "img3", userName: "Luisa", postImage: "post3"),
+        Posts(profileImage: "img6", userName: "Isabelly", postImage: "post4"),
     ]
     
     public var getListPost: [Posts]{
@@ -35,7 +35,7 @@ class HomeViewModel {
     }
     
     public var numberOfItems: Int {
-        1
+        2
     }
     
     public func sizeForItem(indexPath: IndexPath, frame: CGRect) -> CGSize {
