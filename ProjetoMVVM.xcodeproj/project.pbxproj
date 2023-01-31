@@ -79,6 +79,7 @@
 		2F0A801829888DAA00D55DBE /* Post */ = {
 			isa = PBXGroup;
 			children = (
+
 				2F0D07F12989D54E0042492E /* PostCollectionViewCell */,
 				2F0A801929888DBE00D55DBE /* PostCardCollectionVIewCell */,
 			);

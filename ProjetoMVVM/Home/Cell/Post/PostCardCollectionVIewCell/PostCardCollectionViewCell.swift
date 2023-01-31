@@ -37,6 +37,7 @@ class PostCardCollectionViewCell: UICollectionViewCell {
 
 extension PostCardCollectionViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+
         viewModel?.numberOfItems ?? 0
     }
     
@@ -46,6 +47,15 @@ extension PostCardCollectionViewCell: UICollectionViewDelegate, UICollectionView
         cell?.setupCell(data: viewModel.loudCurrentPost(indexPath: indexPath))
     
         return cell ?? UICollectionViewCell()
+       0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//        guard let viewModel = viewModel else { return UICollectionViewCell() }
+//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: StoryCollectionViewCell.identifier, for: indexPath) as? PostCardCollectionViewCell
+//        cell?.setupCell(data: viewModel.loudCurrentStory(indexPath: indexPath), indexPath: indexPath)
+//        return cell ?? UICollectionViewCell()
+        return UICollectionViewCell()
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
