@@ -16,7 +16,7 @@ class PostCardCollectionViewCellScreen: UIView {
         cv.translatesAutoresizingMaskIntoConstraints = false
         cv.showsVerticalScrollIndicator = false
         //TO DO: REGISTER
-        
+        cv.register(PostCollectionViewCell.self, forCellWithReuseIdentifier: PostCollectionViewCell.identifier)
         cv.backgroundColor = .clear
         return cv
     }()
